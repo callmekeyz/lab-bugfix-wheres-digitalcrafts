@@ -6,24 +6,24 @@ function main() {
     console.log('\n\nThere is an Atlanta in these states:')
     for (let st of statesWithAnAtlanta) {
         console.log(st);
-    }
-    
+    };
+
     console.log('\n\n============================');
+};
     
     const statesWithAHouston = db.statesWithCity('houston');
     console.log('\n\nThere is a Houston in these states:')
-    for (let st of statesWithAnAtlanta) {
-        console.log(st);
-    }
+    for (let ht of statesWithAHouston) {
+        console.log(ht);
+    };
     
     console.log('\n\n============================');
-
-    const statesWithATampa = statesWithCity('tampa');
+    
+    const statesWithATampa = db.statesWithCity('tampa');
     console.log('\n\nThere is a Tampa in these states:')
-    for (st of statesWithATampa) {
-        console.log(st);
-    }
+    for (let ta of statesWithATampa) {
+        console.log(ta);
+    };
 
-}
 
-// main();
+main();
